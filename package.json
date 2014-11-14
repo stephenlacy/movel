@@ -1,0 +1,36 @@
+{
+  "name": "Movel",
+  "version": "0.1.0",
+  "author": "Steve Lacy",
+  "dependencies": {
+    "express": "^4.10.2",
+    "fission": "0.0.5",
+    "serve-static": "^1.7.1",
+    "socket.io": "^1.2.0",
+    "bluetooth-obd": "^0.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.2.0",
+    "browserify": "^5.13.1",
+    "coffee-script": "^1.7.1",
+    "coffeeify": "^0.7.0",
+    "gulp": "*",
+    "gulp-autowatch": "0.0.1",
+    "gulp-cached": "^1.0.1",
+    "gulp-coffee": "^2.1.1",
+    "gulp-concat": "^2.3.4",
+    "gulp-csso": "^0.2.9",
+    "gulp-if": "^1.2.4",
+    "gulp-jade": "^0.7.0",
+    "gulp-livereload": "^2.1.0",
+    "gulp-minify-html": "^0.1.4",
+    "gulp-plumber": "^0.6.4",
+    "gulp-sourcemaps": "*",
+    "gulp-stylus": "^1.3.0",
+    "gulp-uglify": "^0.3.2",
+    "gulp-util": "^3.0.0",
+    "nib": "^1.0.3",
+    "vinyl-buffer": "0.0.0",
+    "vinyl-source-stream": "^0.1.1"
+  }
+}
