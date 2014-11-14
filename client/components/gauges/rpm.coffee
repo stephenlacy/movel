@@ -9,6 +9,7 @@ View = fission.view
   init: ->
     return data: 0
   mounted: ->
+    @setState data: @props.data
     gauge = new easyPie @refs.gaugeChart.getDOMNode(),
       size: 235
       rotate: 180
