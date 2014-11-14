@@ -13,10 +13,12 @@ View = fission.view
     gauge = new easyPie @refs.gaugeChart.getDOMNode(),
       size: 235
       rotate: 180
-      trackColor: '#555'
-      lineWidth: 20
-      barColor: '#44decf'
+      trackColor: '#262626'
+      lineWidth: 25
+      barColor: (percent) ->
+        return '#44decf'
       lineCap: 'butt'
+
   componentWillReceiveProps: (props) ->
     @setState data: props.data
     gauge.update @state.data

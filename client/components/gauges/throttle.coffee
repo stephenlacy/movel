@@ -11,12 +11,18 @@ View = fission.view
   mounted: ->
     @setState data: @props.data
     gauge = new easyPie @refs.gaugeChart.getDOMNode(),
-      size: 310
+      size: 298
       rotate: 180
       trackColor: ''
       scaleColor: ''
-      barColor: '#44decf'
-      lineWidth: 32
+      barColor: (percent) ->
+        ctx = @renderer.getCtx()
+        canvas = @renderer.getCanvas()
+        gradient = ctx.createLinearGradient(0, 0, canvas.width, 0)
+        gradient.addColorStop 0, "#44decf"
+        gradient.addColorStop 1, "#fff"
+        return gradient
+      lineWidth: 15
       lineCap: 'butt'
 
   componentWillReceiveProps: (props) ->
