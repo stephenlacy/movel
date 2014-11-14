@@ -20,6 +20,7 @@ module.exports = ->
         btText: 'CONNECT'
         btError: null
         opacity: 100
+        mesurement: 'MPG'
       return o
     mounted: ->
 
@@ -86,3 +87,4 @@ module.exports = ->
 
           div className: 'vss',
             div className: 'text', @state.vss
+            div className: 'speed', @state.mesurement
