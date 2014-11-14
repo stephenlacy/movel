@@ -1,0 +1,93 @@
+@import '../../css/imports/colors'
+
+.circle
+  border-radius: 50%
+.main
+  &.index
+    position: relative
+    background: #000
+    padding-top: 1px
+
+    .overlay
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: rgba(100, 100, 100, .5)
+      z-index: 5
+      text-align: center
+      .connect
+        @extend .circle
+        display: inline-block
+        height: 40vw
+        width: 40vw
+        font-size: 30px
+        margin-top: 12vh
+        background: blue
+        .text
+          position: relative
+          top: 50%
+          transform: translateY(-50%)
+          .error
+            color: red
+            font-size: 15px
+
+
+
+    .gauges
+      @extend .circle
+      position: relative
+      width: 40vw
+      height: 40vw
+      margin-left: 30vw
+      margin-top: 12vh
+      border: 2px solid blue
+      .throttle
+        @extend .circle
+        position: absolute
+        top: 1%
+        left: 1%
+        width: 98%
+        height: 98%
+        background: rgba(68, 222, 207, .6)
+        .stroke
+          @extend .circle
+          position: absolute
+          top: 1%
+          left: 1%
+          width: 98%
+          height: 98%
+          background: blue
+      .rpm
+        @extend .circle
+        position: absolute
+        top: 12.5%
+        left: 12.5%
+        width: 75%
+        height: 75%
+        background: black
+        .stroke
+          @extend .circle
+          position: absolute
+          top: 1%
+          left: 1%
+          width: 98%
+          height: 98%
+          background: blue
+
+      .vss
+        @extend .circle
+        position: absolute
+        top: 25%
+        left: 25%
+        width: 50%
+        height: 50%
+        text-align: center
+        .text
+          @extend .circle
+          font-size: 80px
+          position: relative
+          top: 50%
+          transform: translateY(-50%)
+          color: blue

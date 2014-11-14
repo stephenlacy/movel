@@ -1,0 +1,34 @@
+@require 'mixins/reset'
+@require 'mixins/fonts'
+*
+  reset()
+
+*, *:before, *:after
+  reset()
+
+html, body
+  height 100vh
+  width 100%
+  overflow-x hidden
+body
+  font-roboto()
+  color: #fff
+
+
+// Global styles
+@import 'imports/colors'
+
+a
+  text-decoration none
+  color blue
+  &:hover
+    text-decoration underline
+
+.main
+  min-height 100vh
+  width 100%
+
+
+@import 'imports/classes'
+@import 'imports/buttons'
+@import 'imports/extras'
