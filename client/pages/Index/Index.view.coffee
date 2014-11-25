@@ -13,14 +13,14 @@ module.exports = ->
   fission.view
     init: ->
       o =
-        rpm: 0
-        vss: 0
-        throttlepos: 0
+        rpm: 15
+        vss: 45
+        throttlepos: -25
         btStatus: false
         btText: 'CONNECT'
         btError: null
         opacity: 100
-        mesurement: 'MPG'
+        mesurement: 'KPH'
       return o
     mounted: ->
 
