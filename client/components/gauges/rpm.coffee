@@ -11,7 +11,7 @@ View = fission.view
   mounted: ->
     @setState data: @props.data
     gauge = new easyPie @refs.gaugeChart.getDOMNode(),
-      size: 235
+      size: 250
       rotate: 180
       trackColor: '#262626'
       lineWidth: 25

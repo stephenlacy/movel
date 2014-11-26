@@ -7,6 +7,7 @@
     position: relative
     background: #000
     padding-top: 1px
+    text-align: center
 
     .overlay
       position: absolute
@@ -20,8 +21,8 @@
       .connect
         @extend .circle
         display: inline-block
-        height: 40vw
-        width: 40vw
+        height: 80vh
+        width: 80vh
         font-size: 30px
         margin-top: 12vh
         background: blue
@@ -33,14 +34,12 @@
             color: red
             font-size: 15px
 
-
-
     .gauges
       @extend .circle
       position: relative
-      width: 40vw
-      height: 40vw
-      margin-left: 30vw
+      width: 350px
+      height: 350px
+      display: inline-block
       margin-top: 12vh
       border: 2px solid blue
       .throttle
@@ -51,7 +50,7 @@
         width: 98%
         height: 98%
         background: rgba(68, 222, 207, .6)
-        padding: 2%
+        padding: 1%
 
       .rpm
         @extend .circle
@@ -83,4 +82,3 @@
           position: absolute
           bottom: 20px
           left: 40%
-          z-index: 99
