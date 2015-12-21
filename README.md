@@ -8,7 +8,7 @@ Uses data from a car's [OBD2](https://en.wikipedia.org/wiki/On-board_diagnostics
 
 ![Movel screenshot1](https://raw.githubusercontent.com/stevelacy/movel/master/screenshots/screenshot1.png)
 
-The far inside ring in the picture shows the current RPM (tachometer) and the outside ring shows the current engine throttle indicated by percentage.
+The far outside ring in the picture shows the current RPM (tachometer) and the inside ring shows the current engine throttle indicated by percentage.
 
 
 ### OBD 2 bluetooth device
