@@ -1,6 +1,6 @@
 # Movel
 
-## Dashboard for Raspberry pie car computer
+## Dashboard for Raspberry pi car computer
 
 
 ### Screenshots
